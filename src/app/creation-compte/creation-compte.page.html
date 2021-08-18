@@ -1,0 +1,72 @@
+<div style="background-color: #e7e7e7; height: 100%">
+
+    <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;background: #3a7be0;height: 20%">
+        <ion-row>
+            <ion-col style="margin-left: 1vh;" size="9">
+                <ion-toolbar style="--background: #3a7be0;">
+                    <ion-back-button slot="start" defaultHref="/" style="color: #e7e7e7"></ion-back-button>
+                    <h1 style="font-size: 20px; font-weight: 900; color: #e7e7e7;margin-bottom: 20px">Créer un compte</h1>
+                </ion-toolbar>
+            </ion-col>
+            <ion-col style="margin-top: 5px">
+<!--                <ion-avatar class="cAvatar">-->
+<!--                    <img class="cImage" src="../../assets/images/profile.png">-->
+<!--                </ion-avatar>-->
+            </ion-col>
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-row>
+
+    </div>
+
+    <ion-card style="margin-top: -8vh;margin-left: 20px;margin-right: 20px">
+
+        <ion-list>
+            <ion-item>
+                <ion-label>Type de compte</ion-label>
+                <ion-select>
+                    <ion-select-option value="f">Type 1</ion-select-option>
+                    <ion-select-option value="m">Type 2</ion-select-option>
+                </ion-select>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" placeholder="Prenom et nom">
+                    <ion-icon name="person" style="margin-right: 10px"></ion-icon>
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" placeholder="N° de telephone">
+                    <ion-icon name="call" style="margin-right: 10px"></ion-icon>
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" placeholder="Adresse de messagerie">
+                    <ion-icon name="mail" style="margin-right: 10px"></ion-icon>
+                </ion-input>
+            </ion-item>
+
+
+            <h5 class="ion-text-center">Informations ORBUS</h5>
+
+            <ion-item>
+                <ion-input type="text" placeholder="Votre code PPM">
+                    <ion-icon name="list" style="margin-right: 10px"></ion-icon>
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="text" placeholder="Compte ORBUS">
+                    <ion-icon name="radio-button-on-outline" style="margin-right: 10px"></ion-icon>
+                </ion-input>
+            </ion-item>
+
+        </ion-list>
+
+
+        <ion-button style="margin-right: 15%;margin-left: 15%" expand="block">Valider mon inscription</ion-button>
+        <br>
+    </ion-card>
+
+</div>

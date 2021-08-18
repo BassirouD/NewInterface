@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button (click)="dismissModal()" color="primary">
+                close
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div style="margin-top: 10px;margin-left: 10px">
+        <ion-row>
+            <ion-col>
+                <img style="height: 50px" src="assets/images/om.png">
+            </ion-col>
+            <ion-col size="6">
+                <p style="size: 20px"><b>Payer par Orange Money</b></p>
+            </ion-col>
+            <ion-col></ion-col>
+        </ion-row>
+
+        <p style="font-size: 15px">Merci de renseigner le montant du paiement à effectuer</p>
+
+        <ion-item style="margin-right: 10px">
+            <ion-input type="text" placeholder="Montant à payer">
+                <ion-icon name="list" style="margin-right: 8px"></ion-icon>
+            </ion-input>
+        </ion-item>
+        <br>
+
+        <ion-button style="margin-right: 10px" expand="block">Continuer</ion-button>
+    </div>
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="accueil" style="color: #3dc2ff" [ngClass]="getTextColor('text1')" (click)="setSelectedText('text1')">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Accueil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="dossiers" style="color: #e0bb2e" [ngClass]="getTextColor('text2')" (click)="setSelectedText('text2')">
+      <ion-icon name="document"></ion-icon>
+      <ion-label>Mes dossiers</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="favoris" style="color:#ed576b;" [ngClass]="getTextColor('text3')" (click)="setSelectedText('text3')">
+      <ion-icon name="star"></ion-icon>
+      <ion-label>Favoris</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="parametres" style="color:grey;" [ngClass]="getTextColor('text4')" (click)="setSelectedText('text4')">
+      <ion-icon name="cog"></ion-icon>
+      <ion-label>Parametres</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>
