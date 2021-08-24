@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'ma-page-ionic',
     loadChildren: () => import('./ma-page-ionic/ma-page-ionic.module').then( m => m.MaPageIonicPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 ];
 @NgModule({
   imports: [

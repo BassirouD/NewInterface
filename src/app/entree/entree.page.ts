@@ -1,46 +1,47 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
+
 // import {ScreenOrientation} from "@ionic-native/screen-orientation/ngx";
 
 @Component({
-  selector: 'app-entree',
-  templateUrl: './entree.page.html',
-  styleUrls: ['./entree.page.scss'],
+    selector: 'app-entree',
+    templateUrl: './entree.page.html',
+    styleUrls: ['./entree.page.scss'],
 })
 export class EntreePage implements OnInit {
 
-  constructor(private router: Router) {
-  }
+    constructor(private router: Router) {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
-  // testScreen(){
-  //     console.log(this.screenOrientation.type);
-  // }
+    // testScreen(){
+    //     console.log(this.screenOrientation.type);
+    // }
 
-  goToHome() {
-    this.router.navigateByUrl('/tabs/accueil');
-    localStorage.setItem('key', 'text1')
-  }
+    goToHome() {
+        this.router.navigateByUrl('/tabs/accueil');
+        localStorage.setItem('key', 'text1')
+    }
 
-  goToHome2(){
-    this.router.navigateByUrl('/tabs/dossiers');
-      localStorage.setItem('key', 'text2')
-  }
+    goToHome2() {
+        this.router.navigateByUrl('/tabs/dossiers');
+        localStorage.setItem('key', 'text2')
+    }
 
-  goTestTransfer(){
-    // this.router.navigateByUrl('/test-transfert');
-  }
+    goTestTransfer() {
+        // this.router.navigateByUrl('/test-transfert');
+    }
 
-  goToFireBase(){
-    this.router.navigateByUrl('/tabs/favoris');
-      localStorage.setItem('key', 'text3')
-  }
+    goToFavories() {
+        this.router.navigateByUrl('/tabs/favoris');
+        localStorage.setItem('key', 'text3')
+    }
 
-  goToFiletransfer(){
-    this.router.navigateByUrl('/tabs/parametres');
-      localStorage.setItem('key', 'text4')
-  }
+    goToSetting() {
+        this.router.navigateByUrl('/tabs/parametres');
+        localStorage.setItem('key', 'text4')
+    }
 
 }

@@ -1,9 +1,77 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>favoris</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="--background: #e7e7e7;">
 
-<ion-content>
+    <div style="background-color: #e7e7e7; height: 100%">
 
+        <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;background: #3a7be0;height: 20%">
+            <ion-row>
+                <ion-col style="margin-left: 1vh;" size="9">
+                    <ion-toolbar style="--background: #3a7be0;">
+                        <ion-back-button slot="start" defaultHref="/" style="color: #e7e7e7"></ion-back-button>
+                        <h1 style="font-size: 18px; font-weight: 900; color: #e7e7e7;margin-bottom: 20px">Mes
+                            dossiers favoris</h1>
+                    </ion-toolbar>
+                </ion-col>
+                <ion-col style="margin-top: 5px">
+                    <ion-avatar class="cAvatar">
+                        <img class="cImage" src="../../assets/images/profile.png">
+                    </ion-avatar>
+                </ion-col>
+                <ion-menu-button menu="main-menu"></ion-menu-button>
+            </ion-row>
+
+        </div>
+
+        <ion-card style="margin-top: -5vh;margin-left: 15px;margin-right: 15px">
+            <div style="margin-left: 10px">
+                <h4><b>Vos favoris</b></h4>
+                <p style="font-size: 12px;color: #3a7be0">Ci-dessous vos dossiers enregistrés en favoris</p>
+
+                <p><b>Vous pouvez ajouter un favori en ouvrant le detail d'un dossier</b></p>
+
+                <ion-list>
+                    <div (click)="openPopop()" style="border: solid 1px;border-radius: 10px;margin-right: 3%;height: 65px;border-color: yellowgreen">
+                        <h5 style="font-size: 15px;margin-left: 3%">20065332</h5>
+                        <span style="font-size: 12px;margin-left: 3%">Consultez les details du dossier</span>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <br>
+                    <div (click)="openPopop()" style="border: solid 1px;border-radius: 10px;margin-right: 3%;height: 65px;border-color: yellowgreen">
+                        <h5 style="font-size: 15px;margin-left: 3%">20065332</h5>
+                        <span style="font-size: 12px;margin-left: 3%">Consultez les details du dossier</span>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <br>
+                </ion-list>
+            </div>
+
+        </ion-card>
+
+        <ion-button shape="round" fill="outline" expand="block" (click)="openPopup()"
+                    style="font-size: 10px;margin-left: 3%;margin-right: 3%; --background: #FFFFFF">
+            Comment ajouter un favori
+        </ion-button>
+
+
+        <ion-card style="margin-bottom: -20vh;margin-left: 20px;margin-right: 20px;" (click)="goToFireBase()">
+            <h1 class="ion-text-center"><b>My Orbus</b></h1>
+            <h5 style="font-size: 15px" class="ion-text-center"><b style="color:#3a7be0;">Gerez votre compte </b>ORBUS
+            </h5>
+
+            <h5 class="ion-text-center" style="font-size: 13px">Version demo de My Orbus. Fièrement propulsé</h5>
+            <h5 class="ion-text-center" style="font-size: 13px">par Gaindé 2000.</h5>
+
+            <ion-footer style="padding: 5px">
+                <p style="margin-top: 10px;font-size: 12px" class="ion-text-center">Copyright MyOrbus 2021. All Rights Reserved</p>
+            </ion-footer>
+        </ion-card>
+
+
+        <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;background: #3a7be0;height: 25%">
+
+
+        </div>
+
+    </div>
 </ion-content>

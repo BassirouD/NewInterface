@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery'
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-dossiers',
@@ -9,7 +10,7 @@ import * as $ from 'jquery'
 export class DossiersPage implements OnInit {
 
     mode: boolean = false;
-    constructor() {
+    constructor(private router: Router) {
     }
 
     ngOnInit() {
@@ -26,6 +27,11 @@ export class DossiersPage implements OnInit {
     closeDetail() {
         // console.log(i)
         this.mode = false;
+    }
+
+    gotToFavoris(){
+        this.router.navigateByUrl('/tabs/favoris');
+        localStorage.setItem('key', 'text3');
     }
 
 }

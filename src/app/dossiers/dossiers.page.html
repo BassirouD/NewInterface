@@ -24,7 +24,7 @@
         <ion-card style="margin-top: -5vh;margin-left: 15px;margin-right: 15px">
             <div style="margin-left: 10px">
                 <h4><b>Dossier du code PPM: 0028</b></h4>
-                <p style="font-size: 12px;color: #3a7be0">Ci-dessous vos dossiers en cours</p>
+                <p style="font-size: 12px;color: #3a7be0">Cette liste contient que les 15 dernisers dossiers</p>
 
                 <p><b>Appuyez sur un numéro de dossier pour voir les détails</b></p>
 
@@ -32,7 +32,7 @@
                     <ion-item style="margin-right: 15px">
                         <ion-col size="11">
                             <h5>N°0428
-                                <ion-badge style="margin-left: 5px">Initialisé</ion-badge>
+                                <ion-badge style="margin-left: 5px;background: #2dd36f">Initialisé</ion-badge>
                             </h5>
                         </ion-col>
                         <ion-col (click)="openDetail()" *ngIf="mode == false">
@@ -43,23 +43,24 @@
                             <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px"
                                       name="chevron-up-outline"></ion-icon>
                         </ion-col>
-<!--                        <ion-col>-->
-<!--                            <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px;color: #2dd36f"-->
-<!--                                      name="chevron-down-outline"></ion-icon>-->
-<!--                        </ion-col>-->
+                        <!--                        <ion-col>-->
+                        <!--                            <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px;color: #2dd36f"-->
+                        <!--                                      name="chevron-down-outline"></ion-icon>-->
+                        <!--                        </ion-col>-->
 
                         <div id="monID1" class="testClass">
                             <p>Date: 08-07-2020</p>
                             <p style="background-color: #e7e7e7">Bénéficiare: xxxxxx</p>
 
                             <ion-button style="--background: #3dc2ff"><b>DETAILS DU DOSSIER</b></ion-button>
-                            <ion-button routerLink="/paiement" style="--background: white;color: #3a7be0"><b>PAYER CE DOSSIER</b></ion-button>
+                            <ion-button routerLink="/paiement" style="--background: white;color: #3a7be0"><b>PAYER CE
+                                DOSSIER</b></ion-button>
                         </div>
                     </ion-item>
                     <ion-item style="margin-right: 15px">
                         <ion-col size="11">
                             <h5>N°0428
-                                <ion-badge style="margin-left: 5px">Initialisé</ion-badge>
+                                <ion-badge style="margin-left: 5px;background: #2dd36f">Initialisé</ion-badge>
                             </h5>
                         </ion-col>
                         <ion-col (click)="openDetail()" *ngIf="mode == false">
@@ -70,28 +71,49 @@
                             <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px"
                                       name="chevron-up-outline"></ion-icon>
                         </ion-col>
-<!--                        <ion-col>-->
-<!--                            <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px;color: #2dd36f"-->
-<!--                                      name="chevron-down-outline"></ion-icon>-->
-<!--                        </ion-col>-->
+                        <!--                        <ion-col>-->
+                        <!--                            <ion-icon style="margin-right: 10px;width: 20px;height: 20px;margin-top: 5px;color: #2dd36f"-->
+                        <!--                                      name="chevron-down-outline"></ion-icon>-->
+                        <!--                        </ion-col>-->
                         <div *ngIf="mode == true">
                             <p>Date: 08-07-2020</p>
                             <p style="background-color: #e7e7e7">Bénéficiare: xxxxxx</p>
 
                             <ion-button style="--background: #3dc2ff"><b>DETAILS DU DOSSIER</b></ion-button>
-                            <ion-button routerLink="/paiement" style="--background: white;color: #3a7be0"><b>PAYER CE DOSSIER</b></ion-button>
+                            <ion-button routerLink="/paiement" style="--background: white;color: #3a7be0"><b>PAYER CE
+                                DOSSIER</b></ion-button>
                         </div>
                     </ion-item>
                 </ion-list>
             </div>
 
-
-            <ion-button shape="round" fill="outline" expand="block"
-                        style="font-size: 10px;margin-left: 3%;margin-right: 3%">
-                <ion-icon name="list" style="margin-right: 5px"></ion-icon>
-                Historique complète de mes dossiers
-            </ion-button>
         </ion-card>
+
+        <ion-button shape="round" fill="outline" expand="block" (click)="gotToFavoris()"
+                    style="font-size: 10px;margin-left: 3%;margin-right: 3%; --background: #FFFFFF">
+            <ion-icon name="list" style="margin-right: 5px"></ion-icon>
+            Consultez mes dossiers favoris
+        </ion-button>
+
+
+        <ion-card style="margin-bottom: -20vh;margin-left: 20px;margin-right: 20px;" (click)="goToFireBase()">
+            <h1 class="ion-text-center"><b>My Orbus</b></h1>
+            <h5 style="font-size: 15px" class="ion-text-center"><b style="color:#3a7be0;">Gerez votre compte </b>ORBUS
+            </h5>
+
+            <h5 class="ion-text-center" style="font-size: 13px">Version demo de My Orbus. Fièrement propulsé</h5>
+            <h5 class="ion-text-center" style="font-size: 13px">par Gaindé 2000.</h5>
+
+            <ion-footer style="padding: 5px">
+                <p style="margin-top: 10px;font-size: 12px" class="ion-text-center">Copyright MyOrbus 2021. All Rights Reserved</p>
+            </ion-footer>
+        </ion-card>
+
+
+        <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;background: #3a7be0;height: 25%">
+
+
+        </div>
 
     </div>
 </ion-content>
