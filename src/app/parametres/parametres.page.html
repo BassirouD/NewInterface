@@ -1,9 +1,100 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>parametres</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content style="--background: #e7e7e7;">
 
-<ion-content>
-<ion-button expand="block" routerLink="/creation-compte">Creation compte</ion-button>
+    <div style="background-color: #e7e7e7; height: 100%">
+
+        <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;background: #3a7be0;height: 20%">
+            <ion-row>
+                <ion-col style="margin-left: 1vh;" size="9">
+                    <ion-toolbar style="--background: #3a7be0;">
+                        <ion-back-button slot="start" defaultHref="/" style="color: #e7e7e7"></ion-back-button>
+                        <h1 style="font-size: 18px; font-weight: 900; color: #e7e7e7;margin-top: 5%">
+                            Paramètres</h1>
+                    </ion-toolbar>
+                </ion-col>
+                <ion-col style="margin-top: 5px">
+                    <ion-avatar class="cAvatar">
+                        <img class="cImage" src="../../assets/images/profile.png">
+                    </ion-avatar>
+                </ion-col>
+                <ion-menu-button menu="main-menu"></ion-menu-button>
+            </ion-row>
+
+        </div>
+
+        <ion-card style="margin-top: -5vh;margin-left: 20px;margin-right: 20px;border-radius: 15px">
+            <div style="margin-left: 5%">
+                <h4><b>Paramètres utilisateurs</b></h4>
+                <p style="font-size: 12px;color: #3a7be0">Modifier votre nom</p>
+
+            </div>
+
+            <ion-item lines="none" class="matItem text-white">
+                <mat-form-field appearance="outline">
+                    <mat-label class="text-white">Email</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </ion-item>
+
+            <ion-button shape="round" fill="outline" expand="block" (click)="gotToFavoris()"
+                        style="font-size: 10px;margin-left: 5%;margin-right: 30%; --background: #FFFFFF">
+                Valider la modification
+            </ion-button>
+
+            <hr style="color: black">
+
+            <p style="font-size: 12px;color: #3a7be0;margin-left: 5%">Modifier votre mot de passe</p>
+
+            <ion-item lines="none" class="matItem text-white">
+                <mat-form-field appearance="outline">
+                    <mat-label class="text-white">Nouveau mot de passe</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <span mat-icon-button matSuffix (click)="hide = !hide"
+                          [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}
+                                        </mat-icon>
+                                        </span>
+                </mat-form-field>
+            </ion-item>
+            <ion-item lines="none" class="matItem text-white">
+                <mat-form-field appearance="outline">
+                    <mat-label class="text-white">Confirmer mot de passe</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'">
+                    <span mat-icon-button matSuffix (click)="hide = !hide"
+                          [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}
+                                        </mat-icon>
+                                        </span>
+                </mat-form-field>
+            </ion-item>
+
+            <ion-button shape="round" fill="outline" expand="block" (click)="gotToFavoris()"
+                        style="font-size: 10px;margin-left: 5%;margin-right: 8%; --background: #FFFFFF">
+                Valider la modification du mot de passe
+            </ion-button>
+
+        </ion-card>
+
+
+        <ion-card style="margin-bottom: -20vh;margin-left: 20px;margin-right: 20px;border-radius: 15px"
+                  (click)="goToFireBase()">
+            <h1 class="ion-text-center"><b>My Orbus</b></h1>
+            <h5 style="font-size: 15px" class="ion-text-center"><b style="color:#3a7be0;">Gerez votre compte </b>ORBUS
+            </h5>
+
+            <h5 class="ion-text-center" style="font-size: 13px">Version demo de My Orbus. Fièrement propulsé</h5>
+            <h5 class="ion-text-center" style="font-size: 13px">par Gaindé 2000.</h5>
+
+            <ion-footer style="padding: 5px">
+                <p style="margin-top: 10px;font-size: 12px" class="ion-text-center">Copyright MyOrbus 2021. All Rights
+                    Reserved</p>
+            </ion-footer>
+        </ion-card>
+
+
+        <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;background: #3a7be0;height: 25%">
+
+
+        </div>
+
+    </div>
 </ion-content>

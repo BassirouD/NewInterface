@@ -34,4 +34,8 @@ export class DossiersPage implements OnInit {
         localStorage.setItem('key', 'text3');
     }
 
+    go(){
+        this.router.navigateByUrl('/info-dossier');
+    }
+
 }

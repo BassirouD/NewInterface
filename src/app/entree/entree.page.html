@@ -1,116 +1,118 @@
 <ion-content style="--background:  #e7e7e7">
 
-        <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;background: #3a7be0;height: 20%">
-            <ion-row>
-                <ion-col style="margin-left: 2vh;" size="9">
-                    <h1 style="font-size: 20px; font-weight: 900; color: #e7e7e7;">Bonjour,</h1>
-                    <p style="font-size: 20px; font-weight: 900; margin-top: 5px;">Mor Talla Diop</p>
-                </ion-col>
-                <ion-col style="margin-top: 10px">
-                    <ion-avatar class="cAvatar">
-                        <img class="cImage" src="../../assets/images/profile.png">
-                        <!--                    <ion-icon class="cIcone" name="camera-outline"></ion-icon>-->
-                    </ion-avatar>
-                    <!--                <ion-icon style="width: 30%;height: 30%;" class="ion-padding" name="person-outline"></ion-icon>-->
-                </ion-col>
-            </ion-row>
+    <div style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;background: #3a7be0;height: 20%">
+        <ion-row>
+            <ion-col style="margin-left: 2vh;" size="9">
+                <h1 style="font-size: 20px; font-weight: 900; color: #e7e7e7;">Bonjour,</h1>
+                <p style="font-size: 20px; font-weight: 900; margin-top: 5px;">Mor Talla Diop</p>
+            </ion-col>
+            <ion-col style="margin-top: 10px">
+                <ion-avatar class="cAvatar">
+                    <img class="cImage" src="../../assets/images/profile.png">
+                    <!--                    <ion-icon class="cIcone" name="camera-outline"></ion-icon>-->
+                </ion-avatar>
+                <!--                <ion-icon style="width: 30%;height: 30%;" class="ion-padding" name="person-outline"></ion-icon>-->
+            </ion-col>
+        </ion-row>
 
-        </div>
+    </div>
 
-        <ion-card style="margin-top: -5vh;margin-left: 20px;margin-right: 20px" (click)="goToHome()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h4><b>Accueil</b></h4>
-                    <p style="font-size: 12px;color: #3a7be0">Là ou tout commence</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #2dd36f" class="ion-padding" name="home"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+    <ion-card style="margin-top: -5vh;margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goToHome()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h4><b>Accueil</b></h4>
+                <p style="font-size: 12px;color: #3a7be0">Là ou tout commence</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #2dd36f" class="ion-padding" name="home"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
-        <ion-card style=";margin-left: 20px;margin-right: 20px" (click)="goToHome2()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h4><b>Mes dossiers</b></h4>
-                    <p style="font-size: 11px;color: #3a7be0">Cusultez,recherchez et payez vos dossiers</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #eb445a" class="ion-padding"
-                              name="document"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+    <ion-card style=";margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goToHome2()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h4><b>Mes dossiers</b></h4>
+                <p style="font-size: 11px;color: #3a7be0">Cusultez,recherchez et payez vos dossiers</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #eb445a" class="ion-padding"
+                          name="document"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
-        <ion-card style=";margin-left: 20px;margin-right: 20px" (click)="goTestTransfer()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h5><b>Paiement Facture/Dossier<br>/Autres Services Orbus</b><br></h5>
-                    <p style="font-size: 12px;color: #3a7be0">Payer une facture, un dossier ou autre service</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #5d58e0" class="ion-padding"
-                              name="folder"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+    <ion-card style=";margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goTestTransfer()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h5><b>Paiement Facture/Dossier<br>/Autres Services Orbus</b><br></h5>
+                <p style="font-size: 12px;color: #3a7be0">Payer une facture, un dossier ou autre service</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #5d58e0" class="ion-padding"
+                          name="folder"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
-        <ion-card style=";margin-left: 20px;margin-right: 20px" (click)="goToFavories()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h4><b>Mes favoris</b><br></h4>
-                    <p style="font-size: 12px;color: #3a7be0">Mes dossiers favoris enregistrés</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #e0bb2e" class="ion-padding" name="star"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
-
-
-        <ion-card style=";margin-left: 20px;margin-right: 20px;" (click)="goToSetting()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h4><b>Paramètres</b><br></h4>
-                    <p style="font-size: 12px;color: #3a7be0">Modifiez votre mot de passe</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #ed576b" class="ion-padding" name="cog"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+    <ion-card style=";margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goToFavories()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h4><b>Mes favoris</b><br></h4>
+                <p style="font-size: 12px;color: #3a7be0">Mes dossiers favoris enregistrés</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #e0bb2e" class="ion-padding" name="star"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
 
-        <ion-card style="margin-left: 20px;margin-right: 20px;" (click)="goToFireBase()">
-            <ion-row style="margin-left: 10px">
-                <ion-col size="9">
-                    <h4><b>Contactez le support</b><br></h4>
-                    <p style="font-size: 12px;color: #3a7be0">Si vous avez des questions ou suggestions</p>
-                </ion-col>
-                <ion-col class="ion-text-right">
-                    <ion-icon style="width: 50%;height: 50%;color: #3dc2ff" class="ion-padding" name="mail"></ion-icon>
-                </ion-col>
-            </ion-row>
-        </ion-card>
+    <ion-card style=";margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goToSetting()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h4><b>Paramètres</b><br></h4>
+                <p style="font-size: 12px;color: #3a7be0">Modifiez votre mot de passe</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #ed576b" class="ion-padding" name="cog"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
 
-        <ion-card style="margin-bottom: -20vh;margin-left: 20px;margin-right: 20px;" (click)="goToFireBase()">
-            <h1 class="ion-text-center"><b>My Orbus</b></h1>
-            <h5 style="font-size: 15px" class="ion-text-center"><b style="color:#3a7be0;">Gerez votre compte </b>ORBUS</h5>
-
-            <h5 class="ion-text-center" style="font-size: 13px">Version demo de My Orbus. Fièrement propulsé</h5>
-            <h5 class="ion-text-center" style="font-size: 13px">par Gaindé 2000.</h5>
-
-            <ion-footer style="padding: 5px">
-                <p style="margin-top: 10px" class="ion-text-center">Copyright MyOrbus 2021. All Rights Reserved</p>
-            </ion-footer>
-        </ion-card>
-
-
-        <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;background: #3a7be0;height: 20%">
+    <ion-card style="margin-left: 20px;margin-right: 20px;border-radius: 15px" (click)="goToFireBase()">
+        <ion-row style="margin-left: 10px">
+            <ion-col size="9">
+                <h4><b>Contactez le support</b><br></h4>
+                <p style="font-size: 12px;color: #3a7be0">Si vous avez des questions ou suggestions</p>
+            </ion-col>
+            <ion-col class="ion-text-right">
+                <ion-icon style="width: 50%;height: 50%;color: #3dc2ff" class="ion-padding" name="mail"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
 
-        </div>
+    <ion-card
+        style="margin-bottom: -20vh;margin-left: 20px;margin-right: 20px;border-top-left-radius: 15px;border-top-right-radius: 15px"
+        (click)="goToFireBase()">
+        <h1 class="ion-text-center"><b>My Orbus</b></h1>
+        <h5 style="font-size: 15px" class="ion-text-center"><b style="color:#3a7be0;">Gerez votre compte </b>ORBUS</h5>
+
+        <h5 class="ion-text-center" style="font-size: 13px">Version demo de My Orbus. Fièrement propulsé</h5>
+        <h5 class="ion-text-center" style="font-size: 13px">par Gaindé 2000.</h5>
+
+        <ion-footer style="padding: 5px">
+            <p style="margin-top: 10px" class="ion-text-center">Copyright MyOrbus 2021. All Rights Reserved</p>
+        </ion-footer>
+    </ion-card>
+
+
+    <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;background: #3a7be0;height: 20%">
+
+
+    </div>
 
 
 </ion-content>

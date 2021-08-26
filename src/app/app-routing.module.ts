@@ -30,6 +30,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'info-dossier',
+    loadChildren: () => import('./info-dossier/info-dossier.module').then( m => m.InfoDossierPageModule)
+  },
+  {
+    path: 'info-plus-dossier',
+    loadChildren: () => import('./info-plus-dossier/info-plus-dossier.module').then( m => m.InfoPlusDossierPageModule)
+  },
 ];
 @NgModule({
   imports: [
