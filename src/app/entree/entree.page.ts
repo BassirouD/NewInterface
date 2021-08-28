@@ -44,4 +44,8 @@ export class EntreePage implements OnInit {
         localStorage.setItem('key', 'text4')
     }
 
+    goToSupport(){
+        this.router.navigateByUrl('/support');
+    }
+
 }

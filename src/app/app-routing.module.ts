@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'info-plus-dossier',
     loadChildren: () => import('./info-plus-dossier/info-plus-dossier.module').then( m => m.InfoPlusDossierPageModule)
   },
+  {
+    path: 'support',
+    loadChildren: () => import('./support/support.module').then( m => m.SupportPageModule)
+  },
 ];
 @NgModule({
   imports: [
