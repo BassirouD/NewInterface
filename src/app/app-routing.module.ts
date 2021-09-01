@@ -7,7 +7,7 @@ const routes: Routes = [
         loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
     },
     {
-        path: '',
+        path: 'entree',
         loadChildren: () => import('./entree/entree.module').then(m => m.EntreePageModule)
     },
     {
@@ -43,9 +43,25 @@ const routes: Routes = [
         loadChildren: () => import('./support/support.module').then(m => m.SupportPageModule)
     },
     {
-        path: 'bienvenue',
+        path: '',
         loadChildren: () => import('./bienvenue/bienvenue.module').then(m => m.BienvenuePageModule)
     },
+  {
+    path: 'pay-service',
+    loadChildren: () => import('./paiemenentFacturePages/pay-service/pay-service.module').then( m => m.PayServicePageModule)
+  },
+  {
+    path: 'choose-pay',
+    loadChildren: () => import('./paiemenentFacturePages/choose-pay/choose-pay.module').then( m => m.ChoosePayPageModule)
+  },
+  {
+    path: 'paiement-mobile',
+    loadChildren: () => import('./paiemenentFacturePages/mode-paiement/paiement-mobile/paiement-mobile.module').then( m => m.PaiementMobilePageModule)
+  },
+  {
+    path: 'orbus-paiement',
+    loadChildren: () => import('./paiemenentFacturePages/mode-paiement/orbus-paiement/orbus-paiement.module').then( m => m.OrbusPaiementPageModule)
+  },
 ];
 
 @NgModule({

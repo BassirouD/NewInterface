@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-tabs',
@@ -8,7 +9,7 @@ import {Component} from '@angular/core';
 export class TabsPage {
     private selecteTextId: string = localStorage.getItem('key');
 
-    constructor() {
+    constructor(private router: Router) {
     }
 
     setSelectedText(textId: string) {
@@ -17,6 +18,10 @@ export class TabsPage {
 
     getTextColor(textId: string): string {
         return this.selecteTextId == textId ? "active-item" : "";
+    }
+
+    goToAccueil(){
+        this.router.navigateByUrl('/entree')
     }
 
 }

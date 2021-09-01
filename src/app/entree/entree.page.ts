@@ -20,8 +20,12 @@ export class EntreePage implements OnInit {
     //     console.log(this.screenOrientation.type);
     // }
 
+    logOut(){
+        this.router.navigateByUrl('/login');
+    }
+
     goToHome() {
-        this.router.navigateByUrl('/tabs/accueil');
+        this.router.navigateByUrl('/entree');
         localStorage.setItem('key', 'text1')
     }
 
@@ -31,7 +35,7 @@ export class EntreePage implements OnInit {
     }
 
     goTestTransfer() {
-        // this.router.navigateByUrl('/test-transfert');
+        this.router.navigateByUrl('/pay-service');
     }
 
     goToFavories() {

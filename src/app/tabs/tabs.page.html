@@ -1,7 +1,7 @@
 <ion-tabs>
 
     <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="accueil" style="color: #3dc2ff" [ngClass]="getTextColor('text1')"
+        <ion-tab-button (click)="goToAccueil()" style="color: #3dc2ff" [ngClass]="getTextColor('text1')"
                         (click)="setSelectedText('text1')">
             <ion-icon name="home"></ion-icon>
             <ion-label>Accueil</ion-label>

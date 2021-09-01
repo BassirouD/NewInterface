@@ -18,7 +18,7 @@ export class PaiementPage implements OnInit {
   async openOM(){
       const modal = await this.modalController.create({
           component: PaimentValiderComponent,
-          cssClass: 'cal-modal',
+          cssClass: 'cal-modal1',
           swipeToClose: true
       });
       return await modal.present();
@@ -27,7 +27,7 @@ export class PaiementPage implements OnInit {
     async openFM(){
         const modal = await this.modalController.create({
             component: PaimentValiderFMComponent,
-            cssClass: 'cal-modal',
+            cssClass: 'cal-modal1',
             swipeToClose: true
         });
         return await modal.present();
